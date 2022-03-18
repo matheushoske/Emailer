@@ -1,4 +1,13 @@
-﻿using System;
+﻿// <copyright file="Email.cs" company="matheushoske">
+// Copyright (c) 2021 All Rights Reserved
+// </copyright>
+// <author>Matheus Hoskes</author>
+// <date>18/03/2022 07:48:58 AM </date>
+// <summary>Class created to simplify email sending in .NET</summary>
+//---------------------------------------------------------------------
+// More info About the Project: https://github.com/matheushoske/Emailer
+// Be Welcome to Fork with this project
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,6 +19,7 @@ namespace Emailer
 {
     public class Email
     {
+        #region Public parameters
         #region Enums
         public enum smtps
         {
@@ -24,8 +34,6 @@ namespace Emailer
             Titan = 9
         }
         #endregion
-
-        #region Public parameters
         public static string EmailFrom;
         public static string NameFrom = "";
         public static string EmailPassword;
@@ -99,6 +107,7 @@ namespace Emailer
         }
         #endregion
 
+        #region Private Methods
         private MailAddressCollection GetCCEmails() 
         {
             var col = new MailAddressCollection();
@@ -162,5 +171,6 @@ namespace Emailer
                     break;
             }
         }
+        #endregion
     }
 }

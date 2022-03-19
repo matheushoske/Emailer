@@ -5,6 +5,7 @@ Welcome to the Emailer Class C# Project. A simplyfied way to Send Emails in .NET
 No needing to manually configure your SMTPs servers.
 
 ##Default SMTPs
+
 We already have default configuration for the most Famous STMPS:
 * Gmail
 * Outlook

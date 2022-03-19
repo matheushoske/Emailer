@@ -4,7 +4,7 @@ Welcome to the Emailer Class C# Project. A simplyfied way to Send Emails in .NET
 
 No needing to manually configure your SMTPs servers.
 
-##Default SMTPs
+# Default SMTPs
 
 We already have default configuration for the most Famous STMPS:
 * Gmail
@@ -18,9 +18,9 @@ We already have default configuration for the most Famous STMPS:
 
 [Customized SMTP](#sending-email-with-a-custom-smtp)If yours isn't there, you can manually add your customized SMTP
 
-### Setup
+## Setup
 
-## Setup with Project
+# Setup with Project
 
 Clone the project to your local machine
 ````
@@ -39,7 +39,7 @@ Right Click Project references > Add Reference > Project > Emailer
 ````
 Then it´s done!
 
-## Setup with Dll
+# Setup with Dll
 Download the [Latest Release](https://github.com/matheushoske/Emailer/releases/latest) of the dll
 Reference the dll into your project
 Visual studio:

@@ -51,7 +51,7 @@ Then it´s done!
 
 # How to work with it
 
-##Referencing
+## Referencing
 
 After setting up your project correctly,
 
@@ -60,42 +60,54 @@ Add the Emailer Library reference to your project:
 using Emailer;
 ```
 
-##Sending email with existing SMTP
+## Sending email with existing SMTP
 Let's suppose that you have a Gmail, and want to send an email to your friend Michael. 
 Look how easy it is:
 
+
+Creating the varibles for our Subject and Body info
 ```csharp
-//Varibles for our message
 string subject = "Here is my Subject!";
 string body = "Here is the body of my email \n Regardings, Matheus Hoske"
-//Setting up the static parameters like sender info and SMTP
+```
+
+Setting up the static parameters like sender info and SMTP
+```csharp
 Email.EmailFrom = "youremail@gmail.com";
 Email.EmailPassword = "MyPassword";
 Email.EmailPassword = "MyPassword";
 Email.SmtpServer = Email.smtps.Gmail;
-
-//Creating a new instance for the Email Object adding the receiver email
-Email email = new Email("michael@anydomain.com");
-//Sending the Email
-email.Send(subject,body);
 ```
 
-##Sending email with a custom SMTP
+Creating a new instance for the Email Object adding the receiver email, and sending our email
+```csharp
+Email email = new Email("michael@anydomain.com");
+email.Send(subject,body);
+```
+And it's sended!
+
+
+## Sending email with a custom SMTP
 Now let's suppose that you want to use a SMTP server that aren't listed on our default SMTPs, and wanna send an email to your friend Richard. 
 It's easy too, take a look:
+Creating the varibles for our Subject and Body info
 ```csharp
-//Varibles for our message
 string subject = "Here is my Subject!";
 string body = "Here is the body of my email \n Regardings, Matheus Hoske"
-//Setting up the static parameters of the sender info and the custom SMTP Address and port
+```
+
+Setting up the static parameters of the sender info and the custom SMTP Address and port
+```csharp
 Email.EmailFrom = "youremail@gmail.com";
 Email.EmailPassword = "MyPassword";
 Email.EmailPassword = "MyPassword";
 Email.CustomSmtp = true;
 Email.CustomSmtpAddress = "stmtp.example.com";
 Email.CustomSmtpPort = 587;
+```
 
-//Creating a new instance for the Email Object adding the receiver email
+Creating a new instance for the Email Object adding the receiver email, and sending our email
+```csharp
 Email email = new Email("richard@anydomain.com");
 //Sending the Email
 email.Send(subject,body);

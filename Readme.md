@@ -28,6 +28,7 @@ $git clone https://github.com/matheushoske/Emailer.git
 ````
 
 Add the Emailer project to your solution.
+
 Visual studio:
 ````
 Right Click Solution > Add > Project
@@ -41,7 +42,9 @@ Then it´s done!
 
 ## Setup with Dll
 Download the [Latest Release](https://github.com/matheushoske/Emailer/releases/latest) of the dll
+
 Reference the dll into your project
+
 Visual studio:
 ````
 Right Click Project references > Add Reference > Browse > Select the Emailer.dll

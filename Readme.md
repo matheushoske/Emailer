@@ -49,7 +49,7 @@ Right Click Project references > Add Reference > Browse > Select the Emailer.dll
 
 Then it´s done!
 
-### How to work with it
+# How to work with it
 
 ##Referencing
 
@@ -104,7 +104,7 @@ email.Send(subject,body);
 It's easy, no? Yes, I know, but you can add a new [Issue](https://github.com/matheushoske/Emailer/issues) for us, asking for the addition of a new configured SMTP.
 
 
-### Example application
+# Example application
 
 If you have any doubts about how Emailer works, check our project that consumes Emailer.dll:
 

@@ -16,7 +16,7 @@ We already have default configuration for the most Famous STMPS:
 * Hostinger
 * Titan
 
-[Customized SMTP](#sending-email-with-a-custom-smtp)If yours isn't there, you can manually add your customized SMTP
+If yours isn't there, you can manually add your [Customized SMTP](#sending-email-with-a-custom-smtp)
 
 # Setup
 

@@ -86,6 +86,7 @@ email.Send(subject,body);
 ```
 And it's sended!
 
+(If you're using gmail, don't forget to enable the [Less secure apps permission](https://support.google.com/accounts/answer/6010255) for your sender account)
 
 ## Sending email with a custom SMTP
 Now let's suppose that you want to use a SMTP server that aren't listed on our default SMTPs, and wanna send an email to your friend Richard. 
